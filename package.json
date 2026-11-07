@@ -1,0 +1,28 @@
+{
+  "name": "ecoraee-cloud-local",
+  "version": "1.0.0",
+  "description": "EcoRAEE Cloud, version local: trazabilidad de RAEE",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "dev:api": "node server/index.js",
+    "build": "vite build",
+    "prestart": "npm run build",
+    "start": "node server/index.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "optionalDependencies": {
+    "mssql": "^11.0.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.2.1",
+    "vite": "^8.3.6"
+  }
+}
